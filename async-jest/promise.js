@@ -1,7 +1,9 @@
 var fetch = require('node-fetch');
 
-function getDummyPost() {
-  return fetch('https://jsonplaceholder.typicode.com/posts/1/', {method: 'GET', mode: 'cors'}).then((res) => res.json())
+const api = {
+  getDummyPost() {
+    return fetch('https://jsonplaceholder.typicode.com/posts/1/', {method: 'GET', mode: 'cors'}).then((res) => res.json())
+  }
 }
 
-module.export = getDummyPost;
+module.exports = api;
