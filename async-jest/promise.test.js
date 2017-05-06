@@ -1,6 +1,9 @@
-const getDummyPost = require('./promise');
+const api = require('./promise');
+
 describe('getDummyPost', () => {
   it('should fetch json data', () => {
-    expect(getDummyPost).toHaveProperty('userId');
+    api.getDummyPost().then((res)=>{
+      expect(res).toHaveProperty('userId');
+    })
   });
 });
