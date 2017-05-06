@@ -1,0 +1,18 @@
+{
+  "testRegex": ".*-test\\.js$",
+  "testEnvironment": "node",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "jest": "^19.0.2",
+    "regenerator-runtime": "^0.10.5"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  },
+  "jest": {
+    "transform": {}       
+  }
+}
